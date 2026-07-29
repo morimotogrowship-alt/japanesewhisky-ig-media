@@ -2,10 +2,8 @@ name: Post to Instagram
 
 on:
   schedule:
-    - cron: "13 0 * * *"  # 09:13 JST
-    - cron: "13 3 * * *"  # 12:13 JST
-    - cron: "13 9 * * *"  # 18:13 JST
-    - cron: "13 11 * * *" # 20:13 JST
+    - cron: "13 18 * * *" # 欧州向け（19-20時台CET/BST目安、JST翌03:13）
+    - cron: "13 23 * * *" # 北米向け（19時台EDT目安、JST翌08:13）
   workflow_dispatch: {}
 
 permissions:
